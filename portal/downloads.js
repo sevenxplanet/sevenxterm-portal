@@ -1,7 +1,7 @@
 async function showDownloads() {
   try {
     const manifest = new URL("downloads.json", document.baseURI);
-    const response = await fetch(manifest);
+    const response = await fetch(manifest, { cache: "no-cache" });
     if (!response.ok) return;
     const packages = await response.json();
     for (const group of document.querySelectorAll("[data-downloads]")) {

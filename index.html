@@ -372,9 +372,11 @@
             >
               <div class="capability-copy">
                 <p class="eyebrow">SSH</p>
-                <h3 id="ssh-heading">多标签与分屏终端</h3>
-                <p>登录服务器执行命令，同时保留文件浏览和端口转发入口。</p>
+                <h3 id="ssh-heading">多标签终端与 Bash 命令提示</h3>
+                <p>在同一个 SSH 会话中再次输入命令时，Bash 会以灰字提示匹配的历史命令。按 <kbd>→</kbd> 补齐，再按 <kbd>Enter</kbd> 执行。</p>
                 <ul class="capabilities">
+                  <li>按 <kbd>Ctrl+Space</kbd> 查看远端路径候选，<kbd>Tab</kbd> 使用 Bash 原生补全</li>
+                  <li>命令提示默认开启，可在当前终端的右键菜单中随时切换 Bash suggestions</li>
                   <li>在多个终端间切换，或分屏并行操作</li>
                   <li>通过 SSH Browser 浏览远端目录与权限</li>
                   <li>配置本地、远程或 SOCKS5 端口转发</li>
@@ -385,18 +387,18 @@
               </div>
               <figure class="capture">
                 <a
-                  href="product-screenshots/ssh.png"
+                  href="product-screenshots/ssh-bash-suggestions.png"
                   data-capture
-                  aria-label="放大：SSH 终端与会话列表"
+                  aria-label="放大：SSH Bash 历史命令灰字提示"
                   ><img
-                    src="product-screenshots/ssh.png"
-                    alt="SSH 终端与会话列表"
+                    src="product-screenshots/ssh-bash-suggestions.png"
+                    alt="SSH Bash 历史命令灰字提示"
                     width="1440"
                     height="1000"
                     loading="lazy"
                     decoding="async"
                 /></a>
-                <figcaption>SSH 终端与会话列表</figcaption>
+                <figcaption>演示会话 · 输入 echo sev 后，灰字提示 enxterm-demo</figcaption>
               </figure>
             </article>
             <article
